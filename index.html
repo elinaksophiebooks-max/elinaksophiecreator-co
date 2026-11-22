@@ -1,3 +1,41 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Content Manager | Elina K. Sophie</title></head><body>
-<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Elina K. Sophie | Author &amp; Writer</title>
+<meta name="description" content="The official website of Elina K. Sophie — books, articles and thoughtful writing.">
+<meta name="author" content="Elina K. Sophie">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+<a class="logo" href="index.html">Elina K. Sophie</a>
+<button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('open')">Menu</button>
+<nav><a class="on" href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav>
+</header>
+<main>
+<section class="hero">
+<div>
+<p class="meta">AUTHOR · WRITER</p>
+<h1>Welcome to my creative space.</h1>
+<p>I'm Elina K. Sophie. Explore my books, articles and writing, or get in touch about a project or collaboration.</p>
+<p><a class="btn" href="#library">Explore my writing</a><a class="btn ghost" href="contact.html">Contact me</a></p>
+</div>
+<div class="shelf" aria-hidden="true"><i style="--h:72%;--c:#9b7048"></i><i style="--h:92%;--c:#40556e"></i><i style="--h:82%;--c:#b08a4e"></i><i style="--h:98%;--c:#6e5148"></i><i style="--h:66%;--c:#71806d"></i></div>
+</section>
+<section class="wrap" id="library">
+<h2>Books &amp; articles</h2>
+<p class="lead">Discover selected writing by Elina K. Sophie.</p>
+<div class="filters"><button class="on" data-f="all">All</button><button data-f="Book">Books</button><button data-f="Article">Articles</button></div>
+<div class="grid" id="posts"><p>Loading the library…</p></div>
+</section>
+<section class="band"><div class="wrap"><h2>Let's connect</h2><p class="lead">For book enquiries, collaborations and writing projects, send me a message.</p><a class="btn" href="contact.html">Get in touch</a></div></section>
+</main>
+<footer><div class="fgrid"><div><p class="logo">Elina K. Sophie</p><p>Books, articles and thoughtful writing.</p></div><div><h4>Explore</h4><a href="#library">Library</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div><div><h4>Contact</h4><a href="mailto:elinaksophie.books@gmail.com">elinaksophie.books@gmail.com</a></div></div><p class="copy">&copy; <span id="yr"></span> Elina K. Sophie. All rights reserved.</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
