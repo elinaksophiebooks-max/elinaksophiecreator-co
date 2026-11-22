@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: images/uploads
+public_folder: /images/uploads
+collections:
+  - name: library
+    label: Library
+    files:
+      - name: posts
+        label: Articles and Books
+        file: content/posts.json
+        fields:
+          - label: Posts
+            name: posts
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Type, name: type, widget: select, options: [Article, Book]}
+              - {label: Date, name: date, widget: string, hint: "YYYY-MM-DD"}
+              - {label: Excerpt, name: excerpt, widget: text}
+              - {label: Body, name: body, widget: text, required: false}
+              - {label: Cover image, name: image, widget: image, required: false}
+              - {label: Link (Amazon or external), name: link, widget: string, required: false}
